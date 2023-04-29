@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Encuesta">
+  <meta name="description" content="Sitio web de encuesta">
+  <meta name="keywords" content="Encuesta">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Titulo -->
+  <title>¿Cuánto sabes de videojuegos?</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./favicon.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- Estilo Css -->
+  <link href="./style.css" rel="stylesheet">
+  <!-- ToastifyJs -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-primary">
+  <div class="container px-4">
+
+    <!-- Main -->
+    <main id="main" class="mt-5 flex-column grid gap-1 row-gap-3">
+      <h1 class="text-center">¿Qué tanto conoce de videojuegos la gente de Pachuca?</h1>
+      <p class="text-center fs-5">Esta encuesta tiene el fin de conocer estadisticas sobre la comunidad gamer en
+        Pachuca.</p>
+      <form action="">
+        <p class="fs-6">Llena la siguiente información:</p>
+        <label class="mb-1" htmlFor="nombre">Nombre o Nickname:</label>
+        <input id="nombre" class="form-control mb-1" type="text" autocomplete="on">
+        <label class="mb-1" htmlFor="correo">Correo electrónico:</label>
+        <input id="correo" class="form-control mb-1" type="email" autocomplete="on">
+        <input id="comenzar" class="mt-2 btn btn-danger w-100" type="submit" value="Comenzar">
+      </form>
+    </main>
+
+    <!-- Pregunta 1 -->
+    <section id="pregunta1">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">¿Cuántas horas a la semana juegas videojuegos?</h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                1 a 3 horas
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                3 a 6 horas
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                6 a 9 horas
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                Mas de 9 horas
+              </label>
+            </div>
+            <button id="btn-p1" class="btn btn-danger d-block mt-2">Siguiente</button>
+          </form>
+          <div class="contenedor-img">
+            <img src="img/1.png" alt="img-1">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pregunta 2 -->
+    <section id="pregunta2">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">¿Qué plataforma utilzias más para jugar?</h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio2" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                PSS
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio2" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                Xbox one
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio2" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                Nintendo Switch
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio2" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                Móviles (teléfono o tablet)
+              </label>
+            </div>
+            <button id="btn-p2" class="btn btn-danger d-block mt-2 z-3 position-absolute">Siguiente</button>
+          </form>
+          <div class="contenedor-img2">
+            <img src="img/2.png" alt="img-2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pregunta 3 -->
+    <section id="pregunta3">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">¿Cuál es tu genero de videojuegos favorito?</h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                Arcate
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                Aventura
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                Peleas
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio3" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                Estrategia
+              </label>
+            </div>
+            <button id="btn-p3" class="btn btn-danger d-block mt-2">Siguiente</button>
+          </form>
+          <div class="contenedor-img3">
+            <img src="img/3.png" alt="img-3">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Pregunta 4 -->
+    <section id="pregunta4">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">¿Cuál de los siguientes títulos pertenece a nintendo?</h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio4" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                Mortal Kombat
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio4" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                Pokemon
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio4" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                Fifa
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio4" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                Grand Thef Auto
+              </label>
+            </div>
+            <button id="btn-p4" class="btn btn-danger d-block mt-2 z-3 position-absolute">Siguiente</button>
+          </form>
+          <div class="contenedor-img4">
+            <img src="img/4.png" alt="img-4">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pregunta 5 -->
+    <section id="pregunta5">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">¿Cuál es el videojuego más vendido de todos los tiempos?</h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio5" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                Minecraft
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio5" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                Among Us
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio5" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                Mario Bros
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio5" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                Fornite
+              </label>
+            </div>
+            <button id="btn-p5" class="btn btn-danger d-block mt-2 z-3 position-absolute">Siguiente</button>
+          </form>
+          <div class="contenedor-img5">
+            <img src="img/5.png" alt="img-5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pregunta 6 -->
+    <section id="pregunta6">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">¿En qué se inspiro el creador de pacman para crear ese personaje?</h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio6" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                En una galleta
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio6" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                En una aspiradora
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio6" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                En una pizza
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio6" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                En una tarta
+              </label>
+            </div>
+            <button id="btn-p6" class="btn btn-danger d-block mt-2 z-3 position-absolute">Siguiente</button>
+          </form>
+          <div class="contenedor-img6">
+            <img class="img-6" src="img/6.png" alt="img-6">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pregunta 7 -->
+    <section id="pregunta7">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">¿En qué decada se lanzó el videojuego de Super Mario Bros?</h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio7" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                En los 70's
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio7" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                En los 80's
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio7" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                En los 90's
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio7" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                En los 2000's
+              </label>
+            </div>
+            <button id="btn-p7" class="btn btn-danger d-block mt-2 z-3 position-absolute">Siguiente</button>
+          </form>
+          <div class="contenedor-img7">
+            <img class="img-6" src="img/7.png" alt="img-7">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pregunta 8 -->
+    <section id="pregunta8">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">¿Quién es el heroe y amado de la princesa Zelda?</h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio8" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                Ganandorf
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio8" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                Link
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio8" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                Kratos
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio8" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                Impa
+              </label>
+            </div>
+            <button id="btn-p8" class="btn btn-danger d-block mt-2 z-3 position-absolute">Siguiente</button>
+          </form>
+          <div class="contenedor-img8">
+            <img src="img/8.png" alt="img-8">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pregunta 9 -->
+    <section id="pregunta9">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">En el mundo de Mario Bros, ¿Quiénes forman la pareja más entrañable de nintendo?
+          </h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio9" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                Luigi y Daysi
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio9" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                Yoshi y Birdo
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio9" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                Princesa Peach y Bowser
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio9" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                Princesa Peach y Mario
+              </label>
+            </div>
+            <button id="btn-p9" class="btn btn-danger d-block mt-2 z-3 position-absolute">Siguiente</button>
+          </form>
+          <div class="contenedor-img9">
+            <img class="img-9" src="img/9.png" alt="img-9">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pregunta 10 -->
+    <section id="pregunta10">
+      <div class="d-flex justify-content-center pt-5">
+        <div class="contenedor-preguntas">
+          <h2 class="text-center mb-4">En la primer temporada de pokemon hubo una pareja de pokemon emblemática, su
+            especie era:</h2>
+          <form class="px-3 mt-3">
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio10" id="flexRadio1">
+              <label class="form-check-label fw-bold" for="flexRadio1">
+                Piplups
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio10" id="flexRadio2">
+              <label class="form-check-label fw-bold" for="flexRadio2">
+                Buterfrees
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio10" id="flexRadio3">
+              <label class="form-check-label fw-bold" for="flexRadio3">
+                Marills
+              </label>
+            </div>
+            <div class="form-check my-4">
+              <input class="form-check-input" type="radio" name="flexRadio10" id="flexRadio4">
+              <label class="form-check-label fw-bold" for="flexRadio4">
+                Clefairis
+              </label>
+            </div>
+            <button id="btn-p10" class="btn btn-danger d-block mt-2 z-3 position-absolute">Siguiente</button>
+          </form>
+          <div class="contenedor-img10">
+            <img class="img-10" src="img/10.png" alt="img-10">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pregunta11" class="pregunta11">
+      <div class="mt-4">
+        <h2 class="text-center">¿Sabías que?</h2>
+        <p class="fs-2 text-center">A lo largo de la vida de los videojuegos han existido muchas historias
+          de amor como la de Mario y Peach o la de Link y Zelda</p>
+          <button id="btn-p11" class="btn btn-danger d-block mx-auto mb-2">Siguiente</button>
+          <div class="contenedor-img11 d-flex flex-column justify-content-center">
+            <img src="img/11.png" alt="img-11">
+          </div>
+      </div>
+    </section>
+
+    <section id="pregunta12" class="pregunta12">
+      <div class="mt-4">
+        <p>En el mundo real ; es contigo con quien quiero iniciar una historia de amor!</p>
+        <h3 class="text-center">¿Te gustaria ser mi novio?</h3>
+        <button id="btn-p12" class="btn btn-danger d-block mt-2 z-3 position-absolute">
+          <img src="./img/12.png" alt="img-12">
+        </button>
+      </div>
+    </section>
+
+    <section id="pregunta13" class="pregunta13">
+      <div class="video-container">
+        <video id="video" width="640" height="360" controls>
+          <source src="img/final.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+  </div>
+  <script src="index.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
