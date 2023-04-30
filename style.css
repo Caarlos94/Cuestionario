@@ -1,7 +1,8 @@
 body {
 	width: 100vw;
 	height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	background-color: #f8d8dd;
 }
 
@@ -112,12 +113,20 @@ img {
 	width: 335px;
 }
 
+.img-11 {
+	width: 250px;
+}
+
 .img-10 {
 	width: 225px;
 }
 
 .pregunta11 {
 	font-family: 'Playfair Display', serif;
+}
+
+.pregunta11 p {
+	font-size: 1.8rem;
 }
 
 .pregunta11 h2 {
@@ -136,7 +145,7 @@ img {
 }
 
 .pregunta12 h3 {
-	font-size: 2.25rem;
+	font-size: 2rem;
 }
 
 .video-container {

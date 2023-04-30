@@ -66,7 +66,7 @@ btn1.onclick = function(e) {
   e.preventDefault();
   if(res1[0].checked || res1[1].checked || res1[2].checked || res1[3].checked) {
     p1.style.display = 'none';
-    p2.style.display = 'block';
+    p11.style.display = 'block';
   } 
 }
 
