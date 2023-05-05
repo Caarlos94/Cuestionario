@@ -54,6 +54,7 @@ const video = document.querySelector('#video');
 
 comenzar.onclick = function(e) {
   e.preventDefault();
+  var video = document.querySelector('video');
   if (nombre.value != "" && correo.value != "" ) {
     main.style.display = 'none';
     p1.style.display = 'block';
